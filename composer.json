@@ -1,0 +1,39 @@
+{
+    "name": "studiow/glideformat",
+    "description": "Use the excellent glide api with named presets",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "image",
+        "processing",
+        "manipulation",
+        "editing",
+        "gd",
+        "imagemagick",
+        "imagick",
+        "glide"
+    ],
+    "authors": [
+        {
+            "name": "Willem Wollebrants",
+            "email": "willem@studiow.be"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "league/glide": "^0.3.5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^4.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Studiow\\GlideFormat\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Studiow\\GlideFormat\\Test\\": "tests"
+        }
+    }
+}
