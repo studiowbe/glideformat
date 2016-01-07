@@ -1,5 +1,5 @@
 # GlideFormat
-Use the excellent glide api with named presets
+Use the excellent [glide api](http://glide.thephpleague.com/) with named presets
 
 ## Some basic examples
 
@@ -23,9 +23,6 @@ use Symfony\Component\HttpFoundation\Response;
 $router = new \League\Route\RouteCollection();
 
 $router->get("/img/{format}/{filename}", function(Request $request, Response $response, array $args) use ($server) {
-    return $server->getImageResponse($args['filename'], $args['format']);
+     $server->outputImage($args['filename'], $args['format']);
 });
 ```
-
-## Known Issues and todo's
-add tests and examples
