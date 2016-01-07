@@ -25,12 +25,12 @@ class GlideFormatServerTest extends \PHPUnit_Framework_TestCase
 
     public function testCreateInstance()
     {
-        $this->assertInstanceOf(GlideFormatServer::class, $this->server);
+        $this->assertInstanceOf("\\Studiow\\GlideFormat\\GlideFormatServer", $this->server);
     }
 
     public function testCreateGlideInstance()
     {
-        $this->assertInstanceOf(\League\Glide\Server::class, $this->server->getGlideServer());
+        $this->assertInstanceOf("\\League\\Glide\\Server", $this->server->getGlideServer());
     }
 
     public function testAddRemovePreset()
